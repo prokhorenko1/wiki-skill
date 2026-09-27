@@ -1,0 +1,33 @@
+# Відтворювані залежності (лише в межах цієї навички).
+node_modules/
+
+# Приватні дослідження, PDF, discovery, snapshots, кеш, журнали та Chromium.
+/runtime/
+
+# Результати компіляції, тестів і тимчасові кеші інструментів.
+/dist/
+/build/
+/coverage/
+/test-results/
+/playwright-report/
+/.cache/
+/.npm/
+/.tmp/
+*.tsbuildinfo
+
+# Локальна конфігурація й контакти; перевірений шаблон залишається публічним.
+.env
+.env.*
+!.env.example
+/.npmrc
+/.claude/settings.local.json
+
+# Локальні журнали, зокрема npm debug logs.
+*.log
+npm-debug.log*
+
+# Системні метадані macOS і Windows.
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini

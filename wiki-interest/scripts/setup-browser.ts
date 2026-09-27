@@ -1,0 +1,10 @@
+import { spawn } from 'node:child_process';
+import { createRequire } from 'node:module';
+import { dirname, join } from 'node:path';
+import { browserPath } from '../src/reporting/resources.js';
+const require = createRequire(import.meta.url);
+const withDeps = process.argv.slice(2);
+if (withDeps.some(arg => arg !== '--with-deps')) throw new Error('Дозволено лише --with-deps для системних залежностей Linux.');
+const child = spawn(process.execPath, [join(dirname(require.resolve('playwright/package.json')), 'cli.js'), 'install', ...withDeps, 'chromium'], { stdio: 'inherit', env: { ...process.env, PLAYWRIGHT_BROWSERS_PATH: browserPath } });
+child.on('error', error => { process.stderr.write(`${error.message}\n`); process.exitCode = 1; });
+child.on('exit', code => { process.exitCode = code ?? 1; });

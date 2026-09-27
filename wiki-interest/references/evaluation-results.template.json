@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "not_run",
+  "allowedStatuses": [
+    "passed",
+    "failed",
+    "blocked",
+    "not_run"
+  ],
+  "environment": {
+    "dateUtc": null,
+    "os": null,
+    "architecture": null,
+    "nodeVersion": null,
+    "npmVersion": null,
+    "agent": null,
+    "agentVersion": null,
+    "skillVersion": null,
+    "lockfileSha256": null,
+    "cacheState": null
+  },
+  "model": {
+    "requestedModelId": "claude-haiku-4-5-20251001",
+    "actualModelId": null,
+    "provider": null,
+    "evidencePath": null,
+    "switches": [],
+    "fallbacks": [],
+    "delegations": [],
+    "verified": false
+  },
+  "cases": [
+    {
+      "id": "A",
+      "invocation": "explicit",
+      "status": "not_run"
+    },
+    {
+      "id": "B",
+      "invocation": "explicit",
+      "status": "not_run"
+    },
+    {
+      "id": "C",
+      "invocation": "explicit",
+      "status": "not_run"
+    },
+    {
+      "id": "D",
+      "invocation": "explicit",
+      "status": "not_run",
+      "parentCaseId": "A"
+    },
+    {
+      "id": "E",
+      "invocation": "explicit",
+      "status": "not_run",
+      "parentCaseId": "D"
+    },
+    {
+      "id": "F",
+      "invocation": "explicit",
+      "status": "not_run",
+      "parentCaseId": "E"
+    },
+    {
+      "id": "A",
+      "invocation": "implicit",
+      "status": "not_run"
+    },
+    {
+      "id": "B",
+      "invocation": "implicit",
+      "status": "not_run"
+    },
+    {
+      "id": "C",
+      "invocation": "implicit",
+      "status": "not_run"
+    },
+    {
+      "id": "D",
+      "invocation": "implicit",
+      "status": "not_run",
+      "parentCaseId": "A"
+    },
+    {
+      "id": "E",
+      "invocation": "implicit",
+      "status": "not_run",
+      "parentCaseId": "D"
+    },
+    {
+      "id": "F",
+      "invocation": "implicit",
+      "status": "not_run",
+      "parentCaseId": "E"
+    },
+    {
+      "id": "G",
+      "invocation": "explicit",
+      "status": "not_run"
+    },
+    {
+      "id": "H",
+      "invocation": "explicit",
+      "status": "not_run"
+    },
+    {
+      "id": "I",
+      "invocation": "explicit",
+      "status": "not_run"
+    },
+    {
+      "id": "G",
+      "invocation": "implicit",
+      "status": "not_run"
+    },
+    {
+      "id": "H",
+      "invocation": "implicit",
+      "status": "not_run"
+    },
+    {
+      "id": "I",
+      "invocation": "implicit",
+      "status": "not_run"
+    }
+  ],
+  "caseResultTemplate": {
+    "sessionId": null,
+    "dateUtc": null,
+    "actualModelId": null,
+    "transcriptPath": null,
+    "commandsPath": null,
+    "promptsAndClarifications": [],
+    "runIds": [],
+    "reportIds": [],
+    "checks": {
+      "skillLoaded": "not_run",
+      "existingCliUsed": "not_run",
+      "semanticSelection": "not_run",
+      "numbersMatch": "not_run",
+      "warningsPreserved": "not_run",
+      "pdfValid": "not_run",
+      "visualReview": "not_run",
+      "dataReuse": "not_run",
+      "targetModelVerified": "not_run",
+      "modeSelection": "not_run",
+      "planBeforeMetrics": "not_run",
+      "contributions": "not_run",
+      "sensitivity": "not_run",
+      "coverage": "not_run"
+    },
+    "usage": {
+      "inputTokens": null,
+      "outputTokens": null,
+      "cacheTokens": null,
+      "cost": null,
+      "currency": null,
+      "source": null,
+      "unavailableReason": null
+    },
+    "evidencePaths": [],
+    "reason": null
+  }
+}

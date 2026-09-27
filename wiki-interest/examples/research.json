@@ -1,0 +1,11 @@
+{
+  "analysis": {
+    "mode": "article",
+    "topics": [{ "topicId": "astronomy", "label": "Астрономія", "concepts": [{ "qid": "Q333" }] }],
+    "languages": ["uk", "pl"],
+    "queryLanguage": "uk",
+    "criterion": "yearOverYear"
+  },
+  "languagePolicy": "auto-supplement",
+  "report": { "locale": "uk" }
+}

@@ -1,0 +1,6 @@
+{
+  "topics": [{ "topicId": "astronomy", "label": "Астрономія", "concepts": [{ "qid": "Q333" }] }],
+  "languages": ["uk"],
+  "queryLanguage": "uk",
+  "criterion": "views"
+}

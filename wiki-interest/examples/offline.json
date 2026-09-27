@@ -1,0 +1,6 @@
+{
+  "source": "offline",
+  "topics": [{ "topicId": "astronomy", "label": "Астрономія", "concepts": [{ "qid": "Q333" }] }],
+  "languages": ["uk"],
+  "period": { "start": "2021-01-01", "end": "2022-12-31" }
+}

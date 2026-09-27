@@ -1,0 +1,39 @@
+{
+  "name": "wiki-interest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "cli": "node --import tsx scripts/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run test && node --import tsx scripts/validate.ts",
+    "demo:offline": "node --import tsx scripts/demo.ts",
+    "demo:topic": "node --import tsx scripts/demo-topic.ts",
+    "demo:research": "node --import tsx scripts/demo-research.ts",
+    "smoke:research": "node --import tsx scripts/research-fasting.ts",
+    "audit:sources": "node --import tsx scripts/audit-sources.ts",
+    "doctor": "node scripts/doctor.ts",
+    "smoke:live": "node --import tsx scripts/smoke-live.ts",
+    "smoke:topic": "node --import tsx scripts/smoke-topic.ts",
+    "setup:browser": "node --import tsx scripts/setup-browser.ts"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans": "5.3.0",
+    "@napi-rs/canvas": "1.0.9",
+    "echarts": "6.1.0",
+    "pdfjs-dist": "6.3.289",
+    "playwright": "1.63.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "4.1.11",
+    "yaml": "^2.8.0"
+  }
+}

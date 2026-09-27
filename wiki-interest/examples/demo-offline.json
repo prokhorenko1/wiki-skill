@@ -1,0 +1,11 @@
+{
+  "source": "fixtures",
+  "fixtureId": "demo-v1",
+  "topics": [
+    { "topicId": "astronomy", "label": "Астрономія — синтетичний приклад", "concepts": [{ "qid": "Q333" }] },
+    { "topicId": "science", "label": "Науки — штучний набір", "concepts": [{ "qid": "Q333" }, { "qid": "Q413" }] }
+  ],
+  "languages": ["uk", "pl", "cs"],
+  "period": { "start": "2021-01-01", "end": "2022-12-31" },
+  "criterion": "relativeInterestChange"
+}

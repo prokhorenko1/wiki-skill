@@ -1,0 +1,81 @@
+export type Locale = 'uk' | 'en' | 'ru';
+export const text = {
+  uk: {
+    title: 'Інтерес у Wikipedia', question: 'Який обсяг, напрям зміни та стійкість інтересу до вибраних концепцій?',
+    synthetic: 'ТЕСТОВІ ДАНІ — не описують реальну Wikipedia', live: 'Збережені дані Wikimedia',
+    period: 'Період (UTC)', concepts: 'Концепції', conclusion: 'Спостереження з даних', metrics: 'Показники', quality: 'Якість і обмеження',
+    validation: 'Напрями перевірки гіпотез', sources: 'Джерела й відтворення', downloaded: 'Отримано',
+    absolute: 'Місячна сума переглядів', relative: 'Перегляди на мільйон переглядів проєкту',
+    row: 'Тема / мова', views: 'Перегляди', annual: 'Рік до року', share: 'Зміна частки', daily: 'За день',
+    noData: 'немає даних', excluded: 'Виключені зі спільного порівняння', omitted: 'Не ввійшли рядки',
+    shortened: 'Коротке представлення', full: 'Повні назви, ряди, висновки й джерела: analysis.json / series.csv / manifest.json.',
+    shortenedLabels: 'Довгі назви скорочені до 42 символів; повні — у JSON.',
+    precision: 'Округлення: 1 знак; обсяг — ціле. «—» означає невідоме. Річні зміни: 12 місяців проти попередніх 12.',
+    partialMonths: 'Крайові неповні місяці містять лише запитані дні.',
+    criteria: { views: 'обсяг переглядів', yearOverYear: 'річна зміна', relativeInterestChange: 'зміна відносного інтересу' },
+    criterion: 'Критерій', selected: 'Вибрано', hypothesis: 'Перевірити проблему й контекст в інтерв’ю; окремо перевірити попит і готовність платити малим експериментом.',
+    limits: 'Перегляди ≠ люди чи аудиторія набору статей; мова ≠ країна; інтерес ≠ готовність платити. Поточна назва не гарантує повної історії. Це діагностична евристика, не ймовірність. Сезонну модель і прогноз не доведено.',
+    statuses: { stable: 'стійкий за евристикою', mixed: 'змішаний', fragile: 'крихкий', insufficient: 'недостатньо даних' },
+    types: { volume: 'перегляди', daily_average: 'середньодобові', relative_level: 'на мільйон', annual_change: 'річна зміна', recent_change: 'останні 3 місяці рік до року', relative_change: 'річна зміна частки', sensitivity_change: 'зміна річного висновку в сценарії' },
+  },
+  en: {
+    title: 'Wikipedia interest', question: 'What are the volume, direction and robustness of interest in the selected concepts?',
+    synthetic: 'TEST DATA — does not describe real Wikipedia', live: 'Saved Wikimedia data',
+    period: 'Period (UTC)', concepts: 'Concepts', conclusion: 'Data observations', metrics: 'Metrics', quality: 'Quality and limitations',
+    validation: 'Hypotheses to validate', sources: 'Sources and reproduction', downloaded: 'Retrieved',
+    absolute: 'Monthly total pageviews', relative: 'Views per million project views', row: 'Topic / language', views: 'Views', annual: 'Year on year', share: 'Share change', daily: 'Per day',
+    noData: 'unavailable', excluded: 'Excluded from the common comparison', omitted: 'Rows not included',
+    shortened: 'Short representation', full: 'Full labels, series, findings and sources: analysis.json / series.csv / manifest.json.',
+    shortenedLabels: 'Long labels shortened to 42 characters; full labels in JSON.',
+    precision: 'Rounding: 1 decimal; volume: integer. “—” means unknown. Annual changes: 12 months versus the preceding 12.',
+    partialMonths: 'Partial boundary months contain only requested days.',
+    criteria: { views: 'view volume', yearOverYear: 'annual change', relativeInterestChange: 'relative interest change' },
+    criterion: 'Criterion', selected: 'Selected', hypothesis: 'Interview users about the problem and context; separately test demand and willingness to pay with a small experiment.',
+    limits: 'Views ≠ people or combined audience; language ≠ country; interest ≠ willingness to pay. Current titles may omit earlier history. This is a diagnostic heuristic, not a probability. No proven seasonal model or forecast.',
+    statuses: { stable: 'stable by heuristic', mixed: 'mixed', fragile: 'fragile', insufficient: 'insufficient data' },
+    types: { volume: 'views', daily_average: 'daily average', relative_level: 'per million', annual_change: 'annual change', recent_change: 'last 3 months year on year', relative_change: 'annual share change', sensitivity_change: 'annual change difference in scenario' },
+  },
+  ru: {
+    title: 'Интерес в Wikipedia', question: 'Каковы объём, направление изменения и устойчивость интереса к выбранным концепциям?',
+    synthetic: 'ТЕСТОВЫЕ ДАННЫЕ — не описывают реальную Wikipedia', live: 'Сохранённые данные Wikimedia',
+    period: 'Период (UTC)', concepts: 'Концепции', conclusion: 'Наблюдения из данных', metrics: 'Показатели', quality: 'Качество и ограничения',
+    validation: 'Направления проверки гипотез', sources: 'Источники и воспроизведение', downloaded: 'Получено',
+    absolute: 'Месячная сумма просмотров', relative: 'Просмотры на миллион просмотров проекта', row: 'Тема / язык', views: 'Просмотры', annual: 'Год к году', share: 'Изменение доли', daily: 'За день',
+    noData: 'нет данных', excluded: 'Исключены из общего сравнения', omitted: 'Не вошли строки',
+    shortened: 'Краткое представление', full: 'Полные названия, ряды, выводы и источники: analysis.json / series.csv / manifest.json.',
+    shortenedLabels: 'Длинные названия сокращены до 42 символов; полные — в JSON.',
+    precision: 'Округление: 1 знак; объём — целое. «—» означает неизвестное. Годовые изменения: 12 месяцев против предыдущих 12.',
+    partialMonths: 'Неполные крайние месяцы содержат только запрошенные дни.',
+    criteria: { views: 'объём просмотров', yearOverYear: 'годовое изменение', relativeInterestChange: 'изменение относительного интереса' },
+    criterion: 'Критерий', selected: 'Выбрано', hypothesis: 'Проверить проблему и контекст в интервью; отдельно проверить спрос и готовность платить небольшим экспериментом.',
+    limits: 'Просмотры ≠ люди или аудитория набора статей; язык ≠ страна; интерес ≠ готовность платить. Текущее название не гарантирует полной истории. Это диагностическая эвристика, не вероятность. Сезонная модель и прогноз не доказаны.',
+    statuses: { stable: 'устойчив по эвристике', mixed: 'смешанный', fragile: 'хрупкий', insufficient: 'недостаточно данных' },
+    types: { volume: 'просмотры', daily_average: 'среднесуточные', relative_level: 'на миллион', annual_change: 'годовое изменение', recent_change: 'последние 3 месяца год к году', relative_change: 'годовое изменение доли', sensitivity_change: 'изменение годового вывода в сценарии' },
+  },
+} as const;
+
+export const reasonText: Record<string, Record<Locale, string>> = {
+  DIFFERENT_TOPIC_BREADTH: { uk: 'Теми мають різну ширину наборів концепцій.', en: 'Topics have different concept breadth.', ru: 'Темы имеют разную ширину наборов концепций.' },
+  OVERLAPPING_TOPICS: { uk: 'Теми мають спільні статті; їхні перегляди не є незалежними аудиторіями.', en: 'Topics share articles; their views are not independent audiences.', ru: 'Темы имеют общие статьи; их просмотры не являются независимыми аудиториями.' },
+  INCOMPLETE_DATA: { uk: 'Є невідомі дні.', en: 'Some days are unknown.', ru: 'Есть неизвестные дни.' },
+  UNEQUAL_CONCEPT_COVERAGE: { uk: 'Частину концепцій виключено.', en: 'Some concepts were excluded.', ru: 'Часть концепций исключена.' },
+  NO_COMMON_CONCEPTS: { uk: 'Немає спільних концепцій.', en: 'No common concepts.', ru: 'Нет общих концепций.' },
+  INSUFFICIENT_BASELINE: { uk: 'Базове вікно недоступне.', en: 'Baseline window unavailable.', ru: 'Базовое окно недоступно.' },
+  LOW_BASELINE_VOLUME: { uk: 'Мала база: менше 1000 переглядів за базові 12 місяців.', en: 'Low baseline: fewer than 1000 views in baseline 12 months.', ru: 'Малая база: менее 1000 просмотров за базовые 12 месяцев.' },
+  UNAVAILABLE_CHANGE: { uk: 'Частина змін не визначена.', en: 'Some changes are undefined.', ru: 'Часть изменений не определена.' },
+  ANNUAL_RECENT_DISAGREEMENT: { uk: 'Річна й нещодавня зміни різноспрямовані.', en: 'Annual and recent directions differ.', ru: 'Годовое и недавнее изменения разнонаправлены.' },
+  ABSOLUTE_RELATIVE_DISAGREEMENT: { uk: 'Напрями зміни обсягу й частки різняться.', en: 'Volume and share directions differ.', ru: 'Направления изменения объёма и доли различаются.' },
+  DAY_CONCENTRATION: { uk: 'Один день дає ≥10% переглядів періоду.', en: 'One day contributes ≥10% of period views.', ru: 'Один день даёт ≥10% просмотров периода.' },
+  MONTH_CONCENTRATION: { uk: 'Один місяць дає ≥25% переглядів періоду.', en: 'One month contributes ≥25% of period views.', ru: 'Один месяц даёт ≥25% просмотров периода.' },
+  TOO_FEW_OBSERVATIONS: { uk: 'Менше 90 відомих днів для пошуку сплесків.', en: 'Fewer than 90 known days for spike detection.', ru: 'Менее 90 известных дней для поиска всплесков.' },
+  SPARSE_SERIES: { uk: 'Менше 20% відомих днів мають перегляди; сценарій недоступний.', en: 'Fewer than 20% of known days have views; scenario unavailable.', ru: 'Менее 20% известных дней имеют просмотры; сценарий недоступен.' },
+  UNUSUAL_OBSERVATIONS: { uk: 'Є незвичні дні; причина не встановлена.', en: 'Unusual days detected; cause unknown.', ru: 'Есть необычные дни; причина не установлена.' },
+  SPIKE_SENSITIVE: { uk: 'Висновок чутливий до окремого сценарію обмеження сплесків.', en: 'Conclusion is sensitive to the separate capped-spike scenario.', ru: 'Вывод чувствителен к отдельному сценарию ограничения всплесков.' },
+  UNEVALUATED_NEIGHBORHOODS: { uk: 'Для частини днів бракує сусідніх спостережень.', en: 'Some days lack enough neighboring observations.', ru: 'Для части дней недостаточно соседних наблюдений.' },
+};
+export const formatNumber = (value: number | null, locale: Locale, digits = 1): string => value === null ? '—' : new Intl.NumberFormat(locale, { useGrouping: false, maximumFractionDigits: digits }).format(Object.is(value, -0) ? 0 : value);
+export const escapeHtml = (value: string): string => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
+export function shorten(value: string, length: number): string {
+  const letters = [...new Intl.Segmenter('uk', { granularity: 'grapheme' }).segment(value)].map(s => s.segment);
+  return letters.length > length ? `${letters.slice(0, length - 1).join('')}…` : value;
+}

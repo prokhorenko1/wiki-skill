@@ -1,0 +1,12 @@
+{
+  "query": "Хімія",
+  "queryLanguage": "uk",
+  "languages": ["uk"],
+  "seedQids": ["Q2329"],
+  "searchTerms": ["розділи хімії", "хімічна реакція", "хімічний зв'язок", "періодична система"],
+  "linkTitles": ["Хімія"],
+  "categoryTitles": ["Категорія:Хімія"],
+  "limits": { "candidates": 40, "depth": 1, "requests": 160 },
+  "source": "live",
+  "cachePolicy": "reuse"
+}
